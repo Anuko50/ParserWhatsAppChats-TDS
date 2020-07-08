@@ -10,37 +10,37 @@ import parser.SimpleTextParser;
 
 public class CargadorMensajes {
 	
-    private Vector<MensajesListener> oyentes;
+    private Vector<MensajesListener> observers;
 
     public CargadorMensajes() {
-        oyentes = new Vector<MensajesListener>();
+    	observers = new Vector<MensajesListener>();
     }
 
     public synchronized void addObserver(MensajesListener oyente) {
-        oyentes.add(oyente);
+    	observers.add(oyente);
     }
 
     public synchronized void removeObserver(MensajesListener oyente) {
-        oyentes.remove(oyente);
+    	observers.remove(oyente);
     }
 
     public void setFichero (String ruta, Plataforma plataforma) {
         
-        List<MensajeWhatsApp> chat = null;
+        List<MensajeWhatsApp> mensajesWhatsapp = null;
         try {
         	String FormatoFechaWhatsapp =  "d/M/yy H:mm:ss";
-            chat = SimpleTextParser.parse(ruta, FormatoFechaWhatsapp, plataforma);
+        	mensajesWhatsapp = SimpleTextParser.parse(ruta, FormatoFechaWhatsapp, plataforma);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        notificarNuevosMensajes(new EventoMensaje(this, chat));
+        notificarNuevosMensajes(new EventoMensaje(this, mensajesWhatsapp));
     }
 
     @SuppressWarnings("unchecked")
     private void notificarNuevosMensajes(EventoMensaje e) {
         Vector<MensajesListener> lista;
         synchronized (this) {
-            lista = (Vector<MensajesListener>) oyentes.clone();
+            lista = (Vector<MensajesListener>) observers.clone();
         }
         for (MensajesListener oyente : lista) {
             oyente.update(e);

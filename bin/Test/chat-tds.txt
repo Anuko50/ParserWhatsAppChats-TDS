@@ -1,0 +1,35 @@
+9/9/19 20:47 - Los mensajes en este grupo ahora están protegidos con cifrado de extremo a extremo. Toca para más información.
+9/9/19 20:47 - ‎Jesús Joaquín García Molina creó el grupo "TDS-profesores"
+9/9/19 20:47 - ‎Jesús Joaquín García Molina te añadió
+9/9/19 20:47 - Jesús Joaquín García Molina: Me falta completar la última tabla
+9/9/19 20:48 - Jesús Joaquín García Molina: Javi necesito tus números de presentados y aprobados x convocatoria del curso pasado
+9/9/19 20:49 - Francisco Javier Bermúdez Ruiz: Hummmm te los pase no? En la última reunión? Espera y te los mando...
+9/9/19 20:49 - Jesús Joaquín García Molina: Voy a subir las transp del primer tema sin tocar lo del año pasado
+9/9/19 20:49 - Francisco Javier Bermúdez Ruiz: 👍🏻
+9/9/19 20:49 - Jesús Joaquín García Molina: Sólo tengo teoria
+9/9/19 20:50 - Jesús Joaquín García Molina: O no lo he visto bien
+9/9/19 20:51 - Francisco Javier Bermúdez Ruiz: Voy a ver.. creo que eran todas, pero te lo mando de nuevo
+9/9/19 20:51 - Francisco Javier Bermúdez Ruiz: Por mail 😊
+9/9/19 20:55 - Francisco Javier Bermúdez Ruiz: Jesús, los datos que te pase eran globales por convocatoria y final. No separé prácticas de teoría. Es necesario separar?
+9/9/19 20:56 - Jesús Joaquín García Molina: Si queremos mostrar los datos de teoria y prácticas sí
+9/9/19 20:56 - Francisco Javier Bermúdez Ruiz: Por separado?
+9/9/19 20:57 - Jesús Joaquín García Molina: Al menos, siempre lo hemos hecho así
+9/9/19 20:57 - Francisco Javier Bermúdez Ruiz: Eso tengo que revisarlo para cada convocatoria
+9/9/19 20:57 - Jesús Joaquín García Molina: Por separado
+9/9/19 20:57 - Francisco Javier Bermúdez Ruiz: Ok
+9/9/19 20:57 - Jesús Joaquín García Molina: Quito la tabla
+9/9/19 20:57 - Francisco Javier Bermúdez Ruiz: Espera espera..
+9/9/19 20:58 - Francisco Javier Bermúdez Ruiz: Por convocatoria? O global?
+9/9/19 20:58 - Francisco Javier Bermúdez Ruiz: Lo tengo todo en Excel
+9/9/19 20:58 - Jesús Joaquín García Molina: Por convocatoria
+9/9/19 20:58 - Francisco Javier Bermúdez Ruiz: Vale voy .. 15’ y te lo mando
+9/9/19 20:58 - Jesús Joaquín García Molina: Ok
+9/9/19 21:23 - Francisco Javier Bermúdez Ruiz: Te envié el mail Jesús,
+9/9/19 21:23 - Jesús Joaquín García Molina: Ok
+9/9/19 21:23 - Francisco Javier Bermúdez Ruiz: Olvidé avisarte por aquí Si necesitaras otra cosa dímelo
+21/10/19 13:02 - Carlos J.: Hola, ¿Podéis subir los archivos de la práctica de Arquitectura? Esta tarde los alumnos de Jesús van a empezarla.
+21/10/19 13:54 - Carlos J.: He conseguido subir los PDFs necesarios y la Tienda.
+21/10/19 13:54 - Carlos J.: del año pasado
+21/10/19 19:43 - Jesús Joaquín García Molina: Perdona Carlos, se me pasó anoche.
+21/10/19 19:44 - Carlos J.: Nada, he aprendido a subirlo. Aún así faltan cosas por subir como la ventana de Login y Registro y creo que alguna cosa más (la persistencia?)
+21/10/19 23:04 - José Ramón Hoyos: He subido el servidor de persistencia al aula virtual

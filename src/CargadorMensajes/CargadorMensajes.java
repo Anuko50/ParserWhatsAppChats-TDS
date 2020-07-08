@@ -24,13 +24,15 @@ public class CargadorMensajes {
     	observers.remove(oyente);
     }
 
-    public void setFichero (String ruta, Plataforma plataforma, String formato) {
+    public void setFichero (String ruta, Plataforma plataforma) {
         
         List<MensajeWhatsApp> mensajesWhatsapp = null;
         try {
+        	String formato = "";
         	//"d/M/yy H:mm:ss" //IOS
         	//"d/M/yy H:mm" o "d/M/yyyy H:mm" //Android
         	//según el número de dígitos que contiene el año en el formato exportado.
+        	formato = plataforma.getFormatoDate();
         	mensajesWhatsapp = SimpleTextParser.parse(ruta, formato, plataforma);
         } catch (IOException e) {
             e.printStackTrace();

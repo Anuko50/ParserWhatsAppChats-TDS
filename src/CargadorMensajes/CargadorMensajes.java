@@ -32,7 +32,12 @@ public class CargadorMensajes {
         	//"d/M/yy H:mm:ss" //IOS
         	//"d/M/yy H:mm" o "d/M/yyyy H:mm" //Android
         	//según el número de dígitos que contiene el año en el formato exportado.
-        	formato = plataforma.getFormatoDate();
+        	if(plataforma.toString() == "IOS") {
+        		formato = "d/M/yy H:mm:ss";
+        	}else {
+        		formato = SimpleTextParser.getFormatoDate(ruta);
+        	}
+        	
         	mensajesWhatsapp = SimpleTextParser.parse(ruta, formato, plataforma);
         } catch (IOException e) {
             e.printStackTrace();
@@ -46,8 +51,8 @@ public class CargadorMensajes {
         synchronized (this) {
             lista = (Vector<MensajesListener>) observers.clone();
         }
-        for (MensajesListener oyente : lista) {
-            oyente.nuevosMensajes(e);
-        }
+        
+        lista.stream().forEach(o -> o.nuevosMensajes(e));
+      
     }
 }

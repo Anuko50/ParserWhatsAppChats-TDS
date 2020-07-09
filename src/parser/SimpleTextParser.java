@@ -8,6 +8,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.StringTokenizer;
+
 import modelo.MensajeWhatsApp;
 import modelo.Plataforma;
 
@@ -88,6 +90,27 @@ public class SimpleTextParser {
 		}
 		
 		return false;
+	}
+
+	public static String getFormatoDate(String ruta) throws IOException {
+		//me meto aquí para comprobar si es ANDROID 1 o 2.
+		//"d/M/yy H:mm" o "d/M/yyyy H:mm" 
+		FileReader input;
+		input = new FileReader(ruta);
+		
+		@SuppressWarnings("resource")
+		BufferedReader bufRead = new BufferedReader(input);
+		//leo la primera linea
+		//si es android 1 tendrá esta pinta: "21/10/19 19:44 - Pedro: Buenos días, el componente ya está listo. "
+		//si es android 2 será:  "21/10/2019 19:44 - Pedro: Buenos días, el componente ya está listo. "
+		String line = bufRead.readLine();
+		//"d/M/yy H:mm" o "d/M/yyyy H:mm" 
+		StringTokenizer tok = new StringTokenizer(line, " ");
+		String fecha = tok.nextToken(); //tengo guardado aqui lo que me interesa, ahora la analizo para ver a que formato pertenece.
+		
+		if (fecha.matches("[0-9]{2}/[0-9]{2}/[0-9]{2}")) {
+			return "d/M/yy H:mm";
+		}else return "d/M/yyyy H:mm";
 	}
 
 }
